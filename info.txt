@@ -1,0 +1,4 @@
+Fonts
+Raleway (Google Fonts)
+Lora (Google Fonts)
+Font Awesome (https://fontawesome.com/)

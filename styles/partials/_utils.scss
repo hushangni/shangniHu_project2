@@ -1,0 +1,14 @@
+// colors
+$white: rgb(255, 255, 255);
+$black: rgb(42, 42, 42);
+$red: rgb(218, 51, 29);
+$textGrey: rgb(210, 207, 207);
+$iconGrey: rgb(132, 132, 132);
+$yellow: rgb(229, 191, 75);
+
+
+// mixins
+@mixin fontSize($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue / 10) * 1rem;
+}

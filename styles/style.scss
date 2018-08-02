@@ -1,7 +1,7 @@
 // Partials
-@import "partials/setup";
-@import "partials/typography";
 @import "partials/utils";
+@import "partials/typography";
+@import "partials/setup";
 
 // Components
 @import "components/header";
@@ -11,9 +11,100 @@
 @import "components/reviews";
 @import "components/events";
 @import "components/question";
+@import "components/achievements.scss";
 @import "components/blog";
+@import "components/footer";
 
 // Global Styles
 * {
-    border: 1px solid peru;
+    // border: 1px solid peru;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 65%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+// Themes
+.theme--black {
+    background-color: $black;
+}
+
+.theme--yellow {
+    background: $yellow;
+}
+
+// Buttons
+.btn {
+    text-decoration: none;
+    color: $white;
+    display: inline-block;
+    padding: 12px 30px 8px;
+    border-radius: 40px;
+    letter-spacing: 0.3rem;
+    position: relative;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+// from anton trollback
+// https://jsfiddle.net/AntonTrollback/nqQc7/
+.btn:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+.btn:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+.btn:active:after {
+  opacity: 0;
+}
+
+.btn--red {
+    background-color: $red;
+}
+
+.btn--black {
+    background-color: $black;
 }

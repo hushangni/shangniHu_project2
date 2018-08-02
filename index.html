@@ -5,10 +5,491 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Restaurant</title>
-    <!-- linke to stylesheet -->
+    <!-- load font awesome  -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.9/js/all.js' integrity='sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl'
+        crossorigin='anonymous'></script>
+    <!-- load google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Raleway:400,700" rel="stylesheet">
+    <!-- link to stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>just chilling</h1>
+    <!-- header -->
+    <header class="main-header">
+        <div class="wrapper">
+            <!-- header nav -->
+            <nav class="nav header__nav">
+                <h1 class="logo txt--uppercase">Restaurant</h1>
+                <ul>
+                    <li class="nav-options--active"><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav><!-- header nav end -->
+
+            <!-- header text -->
+            <div class="header__txt">
+                <h3 class="txt--uppercase">Welcome</h3>
+                <h4 class="txt--uppercase">To my restaurant website</h4>
+
+                <a href="#" class="btn btn--red txt--uppercase">start</a>
+            </div><!-- header text end -->
+
+        </div><!-- wrapper end -->
+    </header><!-- header end -->
+
+    <!-- main -->
+    <main>
+        <!-- about section -->
+        <section class="about">
+            <div class="wrapper">
+
+                <h2 class="section__title txt--uppercase">We are...</h2><!--MIGHT NOT NEED section__title-->
+
+                <!-- about grid -->
+                <div class="about__grid">
+                    <div class="about__grid__item">
+                        <img src="assets/image-2.jpeg" alt="bowl of local vegetables and eggs">
+                        <h5 class="item__title txt--uppercase">Local</h5>
+                    </div>
+
+                    <div class="about__grid__item">
+                        <img src="assets/image-3.jpeg" alt="bowl of flour and eggs">
+                        <h5 class="item__title txt--uppercase">Modern</h5>
+                    </div>
+
+                    <div class="about__grid__item">
+                        <img src="assets/image-4.jpeg" alt="smiling hipster with beanie and round glasses">
+                        <h5 class="item__title txt--uppercase">Friendly</h5>
+                    </div>
+
+                    <div class="about__grid__item">
+                        <img src="assets/image-5.jpeg" alt="pancakes with berries stacked on top">
+                        <h5 class="item__title txt--uppercase">Delicious</h5>
+                    </div>
+                </div><!-- about grid end -->
+
+                <!-- about text -->
+                <div class="about__txt">
+                    <h5 class="item__title txt-uppercase">About us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venaim, quis nostrud.</p>
+                    <a href="#" class="btn btn--red txt--uppercase">more</a>
+                </div><!-- about text end -->
+
+            </div><!-- wrapper end -->
+        </section><!-- about section end -->
+
+        <!-- welcome section -->
+        <section class="welcome theme--yellow">
+            <div class="wrapper">
+                <h2 class="section__title txt--uppercase">Welcome to Restaurant</h2>
+                <p>Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate felis eu nunc moletie molestie vel tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla neque eu est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.</p>
+                <a href="#" class="btn btn--black txt--uppercase">view</a>
+            </div><!-- wrapper end -->
+        </section><!-- welcome section end-->
+
+        <!-- services section -->
+        <section class="services">
+            <div class="wrapper">
+                <h2 class="section__title txt--uppercase">Services</h2>
+                <!-- services grid -->
+                <div class="services__grid">
+
+                    <div class="services__grid__item">
+                        <h5 class="item__title txt--uppercase">custom catering</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    </div>
+
+                    <div class="services__grid__item">
+                        <img src="assets/image-6.jpeg" alt="restaurant with wooden bar and accents, black cupboards and dome lights">
+                    </div>
+
+                    <div class="services__grid__item">
+                        <img src="assets/image-7.jpeg" alt="grilled salmon with chopped up pinnaples on top, sitting on top of spinnach and sesame glaze">
+                    </div>
+
+                    <div class="services__grid__item">
+                        <h5 class="item__title txt--uppercase">event bookings</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    </div>
+
+                </div><!--service grid end-->
+            </div><!-- wrapper end -->
+        </section><!-- service section end-->
+
+        <!-- reviews -->
+        <section class="reviews theme--black">
+            <div class="wrapper">
+                <h2 class="section__title txt--uppercase">Reviews</h2>
+
+                <!-- reviews carousel -->
+                <div class="reviews__carousel">
+                    <img src="assets/image-8.jpeg" alt="J. Michels with great puffy hair looking off to the side">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+
+                    <p class="commenter__name">J. Michels</p>
+                </div><!-- reviews carousel end -->
+
+            </div><!-- wrapper end -->
+        </section><!-- reviews section end -->
+
+        <!-- events -->
+        <section class="events">
+            <div class="wrapper">
+                <h2 class="section__title txt--uppercase">Events</h2>
+            </div>
+
+            <!-- events grid -->
+            <div class="events__grid">
+
+                <div class="events__grid__item">
+                    <div class="events__grid__item__overlay">
+                        <img src="assets/image-9.jpeg" class="" alt="">
+
+                        <div class="events__overlay__after">
+                            <h2 class="overlay__title txt--uppercase">Sample event</h2>
+                            <hr class="overlay__hr">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do ciumod tempor incididunt ut labore et dolore magna.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="events__grid__item">
+                    <div class="events__grid__item__overlay">
+                        <img src="assets/image-10.jpeg" class="" alt="">
+
+                        <div class="events__overlay__after">
+                            <h2 class="overlay__title txt--uppercase">Sample event</h2>
+                            <hr class="overlay__hr">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do ciumod tempor incididunt ut labore et dolore magna.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="events__grid__item">
+                    <div class="events__grid__item__overlay">
+                        <img src="assets/image-11.jpeg" class="" alt="">
+
+                        <div class="events__overlay__after">
+                            <h2 class="overlay__title txt--uppercase">Sample event</h2>
+                            <hr class="overlay__hr">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do ciumod tempor incididunt ut labore et dolore magna.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- events grid end -->
+        </section><!-- events section end -->
+
+        <!-- question -->
+        <section class="question">
+            <div class="wrapper">
+                <h2 class="section__title txt--uppercase">Ask a question</h2>
+
+                <!-- question form -->
+                <div class="question-form">
+                    <input type="text" id="message" placeholder="Your Message">
+                    <label for="message" class="visually-hidden">Your message</label>
+                    <a href="#" class="btn btn--red txt--uppercase">send</a>
+                </div><!-- question form end -->
+
+            </div><!-- wrapper end -->
+        </section><!-- question end -->
+
+        <!-- achievements -->
+        <section class="achievements theme--yellow">
+            <div class="wrapper">
+                <!-- achievement list -->
+                <ul class="achievement__list">
+                    <li class="achievement">
+                        <i class="fas fa-check-square"></i>
+                        <p class="achievement--num">16</p>
+                        <p class="achievement--name">Years Open</p>
+                    </li>
+
+                    <li class="achievement">
+                        <i class="fas fa-smile"></i>
+                        <p class="achievement--num">180</p>
+                        <p class="achievement--name">Happy Customers</p>
+                    </li>
+
+                    <li class="achievement">
+                        <i class="fas fa-calendar"></i>
+                        <p class="achievement--num">12</p>
+                        <p class="achievement--name">World Class Cooks</p>
+                    </li>
+
+                    <li class="achievement">
+                        <i class="fas fa-trophy"></i>
+                        <p class="achievement--num">55</p>
+                        <p class="achievement--name">Awards</p>
+                    </li>
+                </ul><!-- achievement list end -->
+            </div><!-- wrapper end -->
+        </section><!-- achievements end-->
+
+        <!-- blog -->
+        <section class="blog">
+            <div class="wrapper">
+                <h2 class="section__title txt--uppercase">Our Blog</h2>
+
+                <!-- blog grid -->
+                <div class="blog__grid">
+
+                    <div class="blog__grid__item">
+                        <div class="blog__grid__overlay__container">
+                            <!-- blog image  -->
+                            <img src="assets/image-12.jpeg" alt="Well grilled steak in red wine reduction.">
+                            <!-- blog grid overlay -->
+                            <div class="blog__grid__overlay">
+                                <div class="blog__grid__overlay__txt">
+                                    <a href="#" class="overlay__link txt--uppercase">Read More</a>
+                                </div>
+                            </div><!-- blog grid overlay end -->
+                        </div><!-- blog grid overlay container end -->
+
+                        <!-- blog content -->
+                        <div class="blog__content">
+                            <h6 class="blog__title">Popular Steak Cuts</h6>
+                            <a href="#" class="read-more">
+                                Read More
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div><!-- blog content end -->
+                    </div><!-- blog grid item end -->
+
+                    <div class="blog__grid__item">
+                        <div class="blog__grid__overlay__container">
+                            <!-- blog image  -->
+                            <img src="assets/image-13.jpeg" alt="neatly set out table with vases and flowers in clear cups.">
+                            <!-- blog grid overlay -->
+                            <div class="blog__grid__overlay">
+                                <div class="blog__grid__overlay__txt">
+                                    <a href="#" class="overlay__link txt--uppercase">Read More</a>
+                                </div>
+                            </div>
+                            <!-- blog grid overlay end -->
+                        </div>
+                        <!-- blog grid overlay container end -->
+
+                        <!-- blog content -->
+                        <div class="blog__content">
+                            <h6 class="blog__title">Reservations are Booming!</h6>
+                            <a href="#" class="read-more">
+                                Read More
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div><!-- blog content end -->
+                    </div><!-- blog grid item end -->
+
+                    <div class="blog__grid__item">
+                        <div class="blog__grid__overlay__container">
+                            <!-- blog image  -->
+                            <img src="assets/image-14.jpeg" alt="glasses filled with wine clinking together in a group.">
+                            <!-- blog grid overlay -->
+                            <div class="blog__grid__overlay">
+                                <div class="blog__grid__overlay__txt">
+                                    <a href="#" class="overlay__link txt--uppercase">Read More</a>
+                                </div>
+                            </div>
+                            <!-- blog grid overlay end -->
+                        </div>
+                        <!-- blog grid overlay container end -->
+
+                        <!-- blog content -->
+                        <div class="blog__content">
+                            <h6 class="blog__title">Wine Tasting Events</h6>
+                            <a href="#" class="read-more">
+                                Read More
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div><!-- blog content end -->
+                    </div><!-- blog grid item end -->
+
+                </div><!-- blog grid end -->
+            </div><!-- wrapper end -->
+        </section><!-- blog end -->
+
+    </main><!-- main end -->
+
+    <!-- footer -->
+    <footer class="footer__bottom theme--black">
+        <ul class="footer__side-social">
+            <li class="side-social__icon">
+                <i class="fab fa-facebook"></i>
+            </li>
+
+            <li class="side-social__icon">
+                <i class="fab fa-instagram"></i>
+            </li>
+
+            <li class="side-social__icon">
+                <i class="fab fa-pinterest-p"></i>
+            </li>
+        </ul>
+        <!-- footer side social end -->
+
+        <div class="wrapper">
+            <div class="footer__grid">
+                <div class="footer__grid__item">
+                    <h5 class="item__title txt--uppercase">Contact</h5>
+                    <ul class="contact__items">
+                        <li class="contact__item">
+                            <i class="far fa-envelope"></i>
+                            <p>info@hackeryou.com</p>
+                        </li>
+
+                        <li class="contact__item">
+                            <i class="fas fa-phone"></i>
+                            <p>123-456-7890</p>
+                        </li>
+
+                        <li class="contact__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Toronto, Ontario</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__grid__item">
+                    <h5 class="item__title txt--uppercase">About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</p>
+                </div>
+
+                <div class="footer__grid__item">
+                    <h5 class="item__title txt--uppercase">Instagram</h5>
+
+                    <ul class="instagram-gallery">
+                        <li class="instagram-gallery__item">
+                            <div class="instagram-gallery__overlay">
+                                <img src="assets/image-15.jpeg" alt="plentiful plates of pasta on a table">
+                                <div class="after">
+                                    <a href="https://www.instagram.com/thisishackeryou/?hl=en" class="instagram-overlay__icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="instagram-gallery__item">
+                            <div class="instagram-gallery__overlay">
+                                <img src="assets/image-16.jpeg" alt="plentiful plates of pasta on a table">
+                                <div class="after">
+                                    <a href="https://www.instagram.com/thisishackeryou/?hl=en" class="instagram-overlay__icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="instagram-gallery__item">
+                            <div class="instagram-gallery__overlay">
+                                <img src="assets/image-17.jpeg" alt="plentiful plates of pasta on a table">
+                                <div class="after">
+                                    <a href="https://www.instagram.com/thisishackeryou/?hl=en" class="instagram-overlay__icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="instagram-gallery__item">
+                            <div class="instagram-gallery__overlay">
+                                <img src="assets/image-18.jpeg" alt="tomato spaghetti on dual plates">
+                                <div class="after">
+                                    <a href="https://www.instagram.com/thisishackeryou/?hl=en" class="instagram-overlay__icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="instagram-gallery__item">
+                            <div class="instagram-gallery__overlay">
+                                <img src="assets/image-19.jpeg" alt="pasta and many bottles of wine settled on a table">
+                                <div class="after">
+                                    <a href="https://www.instagram.com/thisishackeryou/?hl=en" class="instagram-overlay__icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="instagram-gallery__item">
+                            <div class="instagram-gallery__overlay">
+                                <img src="assets/image-20.jpeg" alt="deep dish tomato pizza">
+                                <div class="after">
+                                    <a href="https://www.instagram.com/thisishackeryou/?hl=en" class="instagram-overlay__icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="instagram-gallery__item">
+                            <div class="instagram-gallery__overlay">
+                                <img src="assets/image-21.jpeg" alt="stacked chicken burger and potatoe wedges">
+                                <div class="after">
+                                    <a href="https://www.instagram.com/thisishackeryou/?hl=en" class="instagram-overlay__icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="instagram-gallery__item">
+                            <div class="instagram-gallery__overlay">
+                                <img src="assets/image-22.jpeg" alt="medium rare steak with baby carrots and onions on top">
+                                <div class="after">
+                                    <a href="https://www.instagram.com/thisishackeryou/?hl=en" class="instagram-overlay__icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- instagram gallery  end-->
+
+                </div>
+                <!-- footer grid item end -->
+
+            </div>
+            <!-- footer grid end -->
+
+            <!-- footer nav -->
+            <nav class="nav footer__nav">
+                <h1 class="logo txt--uppercase">Restaurant</h1>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- footer nav end -->
+
+            <!-- copyright -->
+            <div class="copyright">
+                <p class="copyright__txt">2018 all rights reserved &copy;</p>
+            </div>
+        </div>
+        <!-- wrapper end -->
+    </footer>
+
 </body>
 </html>

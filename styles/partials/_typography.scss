@@ -1,0 +1,15 @@
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Lora', serif;
+
+body {
+    @include fontSize(16);
+}
+
+p {
+    font-family: 'Lora', serif;
+    @include fontSize(16);
+}
+
+.txt--uppercase {
+    text-transform: uppercase;
+}

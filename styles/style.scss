@@ -1,0 +1,19 @@
+// Partials
+@import "partials/setup";
+@import "partials/typography";
+@import "partials/utils";
+
+// Components
+@import "components/header";
+@import "components/about";
+@import "components/welcome";
+@import "components/services";
+@import "components/reviews";
+@import "components/events";
+@import "components/question";
+@import "components/blog";
+
+// Global Styles
+* {
+    border: 1px solid peru;
+}

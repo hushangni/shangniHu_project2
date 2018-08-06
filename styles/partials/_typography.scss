@@ -41,6 +41,10 @@ p {
     text-align: center;
 }
 
+.p--small {
+    @include fontSize(14);
+}
+
 .txt--uppercase {
     text-transform: uppercase;
 }

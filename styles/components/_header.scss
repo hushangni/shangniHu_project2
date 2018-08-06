@@ -2,6 +2,34 @@
     background: url(../assets/image-1.jpeg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-
     color: $white;
+    padding: 4rem 0;
+
+    &__nav {
+        justify-content: space-between;
+        flex-direction: row;
+
+        &--flex {
+            display: flex;
+            margin: 0;
+            flex: 1 1 55%;
+            justify-content: space-between;
+        }
+    }
+
+    .logo {
+        margin: 0;
+        flex: 0 1 45%;
+    }
+
+    .header__txt {
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
 }

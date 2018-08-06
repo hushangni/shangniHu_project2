@@ -18,21 +18,21 @@
     <header class="main-header">
         <div class="wrapper">
             <!-- header nav -->
-            <nav class="nav header__nav">
+            <nav class="nav main-header__nav">
                 <h1 class="logo txt--uppercase">Restaurant</h1>
-                <ul>
-                    <li class="nav-options--active"><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About Us</a></li>
+                <ul class="main-header__nav--flex">
+                    <li class="nav-options--active"><a href="#" class="txt--uppercase">Home</a></li>
+                    <li><a href="#" class="txt--uppercase">Menu</a></li>
+                    <li><a href="#" class="txt--uppercase">Blog</a></li>
+                    <li><a href="#" class="txt--uppercase">Contact</a></li>
+                    <li><a href="#" class="txt--uppercase">About Us</a></li>
                 </ul>
             </nav><!-- header nav end -->
 
             <!-- header text -->
             <div class="header__txt">
-                <h3 class="txt--uppercase">Welcome</h3>
-                <h4 class="txt--uppercase">To my restaurant website</h4>
+                <h3 class="txt--uppercase header-title">Welcome</h3>
+                <h4 class="txt--uppercase header-desc">To my restaurant website</h4>
 
                 <a href="#" class="btn btn--red txt--uppercase">start</a>
             </div><!-- header text end -->
@@ -48,35 +48,37 @@
 
                 <h2 class="section__title txt--uppercase">We are...</h2><!--MIGHT NOT NEED section__title-->
 
-                <!-- about grid -->
-                <div class="about__grid">
-                    <div class="about__grid__item">
-                        <img src="assets/image-2.jpeg" alt="bowl of local vegetables and eggs">
-                        <h5 class="item__title txt--uppercase">Local</h5>
-                    </div>
+                <div class="flex-container">
+                    <!-- about grid -->
+                    <div class="about__grid">
+                        <div class="about__grid__item">
+                            <img src="assets/image-2.jpeg" alt="bowl of local vegetables and eggs">
+                            <h5 class="item__title txt--uppercase">Local</h5>
+                        </div>
 
-                    <div class="about__grid__item">
-                        <img src="assets/image-3.jpeg" alt="bowl of flour and eggs">
-                        <h5 class="item__title txt--uppercase">Modern</h5>
-                    </div>
+                        <div class="about__grid__item">
+                            <img src="assets/image-3.jpeg" alt="bowl of flour and eggs">
+                            <h5 class="item__title txt--uppercase">Modern</h5>
+                        </div>
 
-                    <div class="about__grid__item">
-                        <img src="assets/image-4.jpeg" alt="smiling hipster with beanie and round glasses">
-                        <h5 class="item__title txt--uppercase">Friendly</h5>
-                    </div>
+                        <div class="about__grid__item">
+                            <img src="assets/image-4.jpeg" alt="smiling hipster with beanie and round glasses">
+                            <h5 class="item__title txt--uppercase">Friendly</h5>
+                        </div>
 
-                    <div class="about__grid__item">
-                        <img src="assets/image-5.jpeg" alt="pancakes with berries stacked on top">
-                        <h5 class="item__title txt--uppercase">Delicious</h5>
-                    </div>
-                </div><!-- about grid end -->
+                        <div class="about__grid__item">
+                            <img src="assets/image-5.jpeg" alt="pancakes with berries stacked on top">
+                            <h5 class="item__title txt--uppercase">Delicious</h5>
+                        </div>
+                    </div><!-- about grid end -->
 
-                <!-- about text -->
-                <div class="about__txt">
-                    <h5 class="item__title txt-uppercase">About us</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venaim, quis nostrud.</p>
-                    <a href="#" class="btn btn--red txt--uppercase">more</a>
-                </div><!-- about text end -->
+                    <!-- about text -->
+                    <div class="about__txt">
+                        <h5 class="item__title txt--uppercase">About us</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venaim, quis nostrud.</p>
+                        <a href="#" class="btn btn--red txt--uppercase">more</a>
+                    </div><!-- about text end -->
+                </div><!-- flex container end -->
 
             </div><!-- wrapper end -->
         </section><!-- about section end -->
@@ -97,7 +99,7 @@
                 <!-- services grid -->
                 <div class="services__grid">
 
-                    <div class="services__grid__item">
+                    <div class="services__grid__item services__grid__item__text">
                         <h5 class="item__title txt--uppercase">custom catering</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                     </div>
@@ -110,7 +112,7 @@
                         <img src="assets/image-7.jpeg" alt="grilled salmon with chopped up pinnaples on top, sitting on top of spinnach and sesame glaze">
                     </div>
 
-                    <div class="services__grid__item">
+                    <div class="services__grid__item services__grid__item__text">
                         <h5 class="item__title txt--uppercase">event bookings</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                     </div>
@@ -126,10 +128,13 @@
 
                 <!-- reviews carousel -->
                 <div class="reviews__carousel">
-                    <img src="assets/image-8.jpeg" alt="J. Michels with great puffy hair looking off to the side">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                    <a href="#"><i class="fas fa-angle-left"></i></a>
+                    <img src="assets/image-8.jpeg" alt="J. Michels with great puffy hair looking off to the side" class="reviews__carousel__image">
+                    <a href="#"><i class="fas fa-angle-right"></i></a>
+                    <p class="reviews__carousel__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
 
-                    <p class="commenter__name">J. Michels</p>
+
+                    <p class="commenter-name">~ J. Michels ~</p>
                 </div><!-- reviews carousel end -->
 
             </div><!-- wrapper end -->

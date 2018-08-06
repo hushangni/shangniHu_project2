@@ -3,11 +3,42 @@
 
 body {
     @include fontSize(16);
+    letter-spacing: 0.1rem;
 }
 
 p {
-    font-family: 'Lora', serif;
     @include fontSize(16);
+    font-family: 'Lora', serif;
+}
+
+.logo {
+    @include fontSize(34);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.header-title {
+    @include fontSize(45);
+    margin-bottom: 1rem;
+}
+
+.header-desc {
+    @include fontSize(22);
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.section__title {
+    @include fontSize(34);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 8rem 0 7rem;
+    text-align: center;
+}
+
+.item__title {
+    @include fontSize(22);
+    text-align: center;
 }
 
 .txt--uppercase {

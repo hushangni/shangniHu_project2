@@ -1,0 +1,42 @@
+.reviews__carousel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 7rem;
+
+    .fa-angle-left,
+    .fa-angle-right {
+        position: absolute;
+        font-size: 3.5rem;
+        cursor: pointer;
+    }
+
+    .fa-angle-left {
+        left: 30%;
+        top: 13%;
+    }
+
+    .fa-angle-right {
+        right: 30%;
+        top: 13%;
+    }
+
+    &__image {
+        width: 126px;
+        height: 126px;
+        margin-bottom: 4rem;
+        position: relative;
+    }
+
+    &__text {
+        width: 80%;
+    }
+
+    .commenter-name {
+        font-style: italic;
+    }
+}
+
+// media looks like shit at 720px

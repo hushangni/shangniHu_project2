@@ -1,3 +1,7 @@
+.events {
+    padding-top: 7rem;
+}
+
 .events__grid {
     display: flex;
 
@@ -26,7 +30,7 @@
             opacity: 0;
             width: 100%;
             transition: .3s ease;
-            background-color:  rgba(42, 42, 42, 0.9);
+            background-color:  $overlayBlack;
             color: white;
             text-align: center;
             display: flex;

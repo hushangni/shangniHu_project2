@@ -45,6 +45,10 @@ a {
     color: inherit;
 }
 
+.section {
+    padding: 7rem 0;
+}
+
 .wrapper {
     width: 65%;
     max-width: 1000px;
@@ -53,7 +57,6 @@ a {
 
 .flex-container {
     display: flex;
-    margin-bottom: 6rem;
 }
 
 .visually-hidden:not(:focus):not(:active) {

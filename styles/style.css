@@ -1,3 +1,65 @@
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  80% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  85% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  95% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  80% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  85% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  95% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.25; }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.25; }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
 body {
   font-size: 16px;
   font-size: 1.6rem;
@@ -30,7 +92,7 @@ p {
   font-size: 3.4rem;
   font-family: 'Raleway', sans-serif;
   margin: 0;
-  padding: 8rem 0 7rem;
+  padding-bottom: 7rem;
   text-align: center; }
 
 .item__title {
@@ -258,9 +320,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .welcome .wrapper {
   text-align: center; }
 
-.welcome .btn {
-  margin-bottom: 8rem; }
-
 .welcome p {
   margin-top: 0; }
 
@@ -297,8 +356,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
-  padding-bottom: 7rem; }
+  position: relative; }
   .reviews__carousel .fa-angle-left,
   .reviews__carousel .fa-angle-right {
     position: absolute;
@@ -319,6 +377,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     width: 80%; }
   .reviews__carousel .commenter-name {
     font-style: italic; }
+
+.events {
+  padding-top: 7rem; }
 
 .events__grid {
   display: -webkit-box;
@@ -374,8 +435,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0; }
 
 .question-form {
-  text-align: center;
-  margin-bottom: 7rem; }
+  text-align: center; }
   .question-form__message {
     display: block;
     margin: 0 auto;
@@ -390,6 +450,106 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   .question-form__message:focus {
     border-color: #848484;
     width: 100%; }
+
+.achievement__list {
+  margin: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .achievement__list__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 calc(100% / 4);
+    flex: 1 1 calc(100% / 4);
+    text-align: center; }
+    .achievement__list__item__icon {
+      font-size: 3.6rem;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .achievement__list__item__icon:hover {
+      color: #848484;
+      -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+      transform: rotate(-15deg); }
+    .achievement__list__item__num {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      margin: 1rem 0 0.6rem; }
+    .achievement__list__item__name {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      font-size: 1.5rem; }
+
+.blog__grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .blog__grid__item {
+    min-width: 200px; }
+  .blog__grid__overlay__container {
+    position: relative;
+    width: 100%; }
+  .blog__grid__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    width: 100%;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    background-color: rgba(42, 42, 42, 0.9);
+    color: white;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 2rem; }
+    .blog__grid__overlay__txt {
+      -webkit-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease; }
+  .blog__grid__overlay__container:hover .blog__grid__overlay {
+    opacity: 1;
+    width: 100%;
+    cursor: pointer; }
+  .blog__grid__overlay__container:hover .blog__grid__overlay__txt {
+    -webkit-animation: wiggle 1.4s infinite;
+    animation: wiggle 1.4s infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+.blog__content__title {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 2rem 0; }
+
+.blog__content .read-more {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #da331d;
+  font-weight: 700;
+  margin: 0;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease; }
+  .blog__content .read-more .fa-angle-double-right {
+    font-size: 1.5rem; }
+  .blog__content .read-more:hover .fa-angle-double-right {
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite; }
 
 html {
   font-size: 62.5%; }
@@ -418,6 +578,9 @@ a {
   text-decoration: none;
   color: inherit; }
 
+.section {
+  padding: 7rem 0; }
+
 .wrapper {
   width: 65%;
   max-width: 1000px;
@@ -426,8 +589,7 @@ a {
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 6rem; }
+  display: flex; }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;

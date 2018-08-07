@@ -1,0 +1,32 @@
+.achievement__list {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        flex: 1 1 calc(100% / 4);
+        text-align: center;
+
+        &__icon {
+            font-size: 3.6rem;
+            transition: 0.3s;
+        }
+
+        &__icon:hover {
+            color: $iconGrey;
+            transform: rotate(-15deg);
+        }
+
+        &__num {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            margin: 1rem 0 0.6rem;
+        }
+
+        &__name {
+            margin: 0;
+            padding: 0;
+            @include fontSize(15);
+        }
+    }
+}

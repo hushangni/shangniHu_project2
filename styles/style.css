@@ -269,6 +269,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
+  .main-header .nav-options:hover {
+    color: #848484; }
   .main-header .logo {
     margin: 0;
     -webkit-box-flex: 0;
@@ -668,6 +670,47 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0;
   padding-bottom: 3rem;
   text-align: center; }
+
+.footer__bottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.footer__side-social {
+  position: absolute;
+  right: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .footer__side-social__icon {
+    font-size: 2rem; }
+    .footer__side-social__icon:nth-of-type(2) {
+      margin: 4rem 0; }
+    .footer__side-social__icon:hover .fa-facebook {
+      color: #4867AA; }
+    .footer__side-social__icon:hover .fa-instagram {
+      color: #BE3B81; }
+    .footer__side-social__icon:hover .fa-facebook {
+      color: #4867AA; }
+    .footer__side-social__icon:hover .fa-pinterest-p {
+      color: #DA192A; }
 
 html {
   font-size: 62.5%; }

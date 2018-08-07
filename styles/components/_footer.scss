@@ -121,3 +121,44 @@
     padding-bottom: 3rem;
     text-align: center;
 }
+
+.footer__bottom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__side-social {
+    position: absolute;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        font-size: 2rem;
+
+        &:nth-of-type(2) {
+            margin: 4rem 0;
+        }
+
+        &:hover .fa-facebook {
+            color: #4867AA;;
+        }
+
+        &:hover .fa-instagram {
+            color: #BE3B81;
+        }
+
+        &:hover .fa-facebook {
+            color: #4867AA;;
+        }
+
+        &:hover .fa-pinterest-p {
+            color: #DA192A;
+        }
+    }
+
+}

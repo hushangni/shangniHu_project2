@@ -342,24 +342,33 @@
                     <ul class="contact__items">
                         <li class="contact__item">
                             <i class="far fa-envelope"></i>
-                            <p>info@hackeryou.com</p>
+                            <p class="contact__item__txt p--small">info@hackeryou.com</p>
                         </li>
 
                         <li class="contact__item">
                             <i class="fas fa-phone"></i>
-                            <p>123-456-7890</p>
+                            <p class="contact__item__txt p--small">123-456-7890</p>
                         </li>
 
                         <li class="contact__item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p>Toronto, Ontario</p>
+                            <p class="contact__item__txt p--small">Toronto, Ontario</p>
+                        </li>
+
+                        <li class="contact__item">
+                            <form action="#" class="contact__item__form">
+                                <input type="email" placeholder="your email" class="contact__item__form__email">
+                                <a href="#">
+                                    <i class="fas fa-paper-plane"></i>
+                                </a>
+                            </form>
                         </li>
                     </ul>
                 </div>
 
                 <div class="footer__grid__item">
                     <h5 class="item__title txt--uppercase">About Us</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    <p class="p--small about-us__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                         commodo consequat.</p>
                 </div>
@@ -465,9 +474,9 @@
             <!-- footer grid end -->
 
             <!-- footer nav -->
-            <nav class="nav footer__nav">
+            <nav class="nav footer__nav section">
                 <h1 class="logo txt--uppercase">Restaurant</h1>
-                <ul>
+                <ul class="footer__nav__items">
                     <li>
                         <a href="#">Home</a>
                     </li>

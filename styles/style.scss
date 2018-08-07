@@ -117,7 +117,7 @@ a {
   );
 }
 
-/* Hover state - trigger effect */
+// btn hover states
 .btn:hover:after {
   opacity: 1;
   top: -30%;
@@ -127,7 +127,7 @@ a {
   transition-timing-function: ease;
 }
 
-/* Active state */
+// btn active states
 .btn:active:after {
   opacity: 0;
 }
@@ -138,4 +138,17 @@ a {
 
 .btn--black {
     background-color: $black;
+}
+
+// box shadow effects
+.box {
+    transition: 0.4s ease;
+    padding: 3rem;
+}
+
+.box:hover {
+    box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow:  0px 15px 15px -5px rgba(0, 0, 0, 0.35);
+    transform: scale(1.02, 1.02);
 }

@@ -8,22 +8,23 @@
     &__nav {
         justify-content: space-between;
         flex-direction: row;
+        display: flex;
 
         &--flex {
             display: flex;
-            margin: 0;
-            flex: 1 1 55%;
+            flex: 1 1 calc(100% / 5);
             justify-content: space-between;
         }
     }
 
     .nav-options:hover {
         color: $iconGrey;
+        display: inline-block;
     }
 
     .logo {
         margin: 0;
-        flex: 0 1 45%;
+        flex: 0 1 40%;
     }
 
     .header__txt {
@@ -34,6 +35,112 @@
         justify-content: center;
         align-items: flex-start;
     }
+}
 
+.t-nav {
+    flex: 1 0 60%;
+    margin: 0;
+    display: inline-block;
+}
 
+.hamburger-toggle {
+  float: right;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-toggle span {
+  background: $white;
+  height: 2px;
+  width: 28px;
+  display: block;
+  margin: 6px 0;
+  -webkit-transition: .5s;
+  transition: .5s
+}
+
+.hamburger-toggle.x-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-toggle.x-toggle span:nth-child(1) {
+   -webkit-transform: rotate(45deg);
+    transform-origin: 5px 9px;
+   -webkit-transform: rotate(45deg);
+    transform-origin: 5px 9px;
+    background-color: $black;
+}
+
+.hamburger-toggle.x-toggle span:nth-child(3) {
+   -webkit-transform: rotate(-45deg);
+    transform-origin: 8px -7px;
+   -webkit-transform: rotate(-45deg);
+    transform-origin: 8px -7px;
+    background-color: $black;
+}
+
+// media 820px
+@media (max-width: 820px) {
+
+    .hamburger-toggle {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+
+    .main-header__nav--flex {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .t-nav {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: absolute;
+        -webkit-transform: translate(-100%);
+        transform: translate(-100%);
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #F6F7F9;
+        height: 100vh;
+        -webkit-transition: .3s;
+        transition: .3s;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .t-nav.res-menu {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;;
+    }
+
+    .nav-options {
+        @include fontSize(30);
+        padding: 15px;
+        color: $black;
+
+        a {
+            padding: 0;
+            font-size: 1em;
+            color: $black;
+        }
+    }
+
+    .nav-options:hover {
+        border-bottom: 1px solid $black;
+    }
+
+}
+
+@media (max-height: 400px) {
+    .nav-options {
+        @include fontSize(20);
+        padding: 10px;
+    }
 }

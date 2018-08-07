@@ -13,7 +13,6 @@
     }
 
     .contact__item {
-
         &__txt {
             margin: 0.6rem 0.4rem;
         }
@@ -21,6 +20,7 @@
         &__form {
             margin-top: 1.5rem;
             position: relative;
+            width: 80%;
 
             &__email {
                 background: transparent;
@@ -46,6 +46,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
         grid-gap: 1rem;
+        padding: 0;
 
 
         &__overlay {
@@ -159,6 +160,52 @@
         &:hover .fa-pinterest-p {
             color: #DA192A;
         }
+    }
+
+}
+
+@media (max-width: 831px) {
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer__grid__item__about {
+        display: none;
+    }
+}
+
+@media (max-width: 567px) {
+    .footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .instagram-gallery {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .footer__nav__items {
+        padding: 0 10px;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        & li {
+         margin: 1rem 10px;
+        }
+    }
+
+
+    .footer__side-social {
+        position: absolute;
+        right: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }

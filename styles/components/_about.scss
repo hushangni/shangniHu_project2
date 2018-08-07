@@ -18,3 +18,50 @@
     flex: 1 1 50%;
     text-align: center;
 }
+
+@media (max-width: 700px) {
+
+    .about .flex-container {
+        flex-direction: column;
+    }
+    .about__grid__item .item__title {
+        display: none;
+    }
+
+    .about__grid {
+        order: 1;
+    }
+
+    .about__txt {
+        order: -1;
+        margin-bottom: 30px;
+
+        h5 {
+            display: none;
+        }
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .about__grid__item {
+        padding: 2%;
+        flex: 1 1 calc(100%/4);
+    }
+
+    .about__grid__item img {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .about__grid__item img {
+        display: none;
+    }
+
+    .about__txt {
+        margin: 0;
+    }
+}

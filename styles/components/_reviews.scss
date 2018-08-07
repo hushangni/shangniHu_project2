@@ -39,3 +39,26 @@
 }
 
 // media looks like shit at 720px
+@media (max-width: 900px) {
+    .reviews__carousel .fa-angle-left {
+        left: 27%;
+        top: 15%;
+    }
+
+    .reviews__carousel .fa-angle-right {
+        right: 27%;
+        top: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    .reviews__carousel .fa-angle-left {
+        left: 17%;
+        top: 15%;
+    }
+
+    .reviews__carousel .fa-angle-right {
+        right: 17%;
+        top: 15%;
+    }
+}

@@ -1,0 +1,20 @@
+.question-form {
+    text-align: center;
+    margin-bottom: 7rem;
+
+    &__message {
+        display: block;
+        margin: 0 auto;
+        width: 65%;
+        text-align: center;
+        border: none;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $black;
+        transition: 0.4s;
+    }
+
+    &__message:focus {
+        border-color: $iconGrey;
+        width: 100%;
+    }
+}

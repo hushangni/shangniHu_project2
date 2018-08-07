@@ -4,6 +4,8 @@
 
 .events__grid {
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     &__item {
         flex: 1 1 33%;
@@ -54,4 +56,41 @@
 .overlay__title,
 .overlay__p {
     margin: 0;
+}
+
+
+@media (max-width: 950px) {
+    .overlay__hr {
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+
+    .overlay__title {
+        @include fontSize(20);
+    }
+
+    .overlay__p {
+        @include fontSize(12);
+    }
+}
+
+@media (max-width: 775px) {
+    .events__grid {
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+
+        &__item,
+        &__item:nth-child(1),
+        &__item:nth-child(2) {
+            margin: 15px;
+            flex: 0 1 calc(100% - 80px);
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .events__grid {
+        width: 85%;
+    }
 }

@@ -47,9 +47,7 @@
     display: none;
 }
 
-
-
-/* no circle */
+/* flickity button styling */
 button.flickity-button {
   background: transparent;
 }
@@ -65,26 +63,22 @@ button.flickity-button:hover {
 svg.flickity-button-icon {
     fill: $iconGrey;
 }
-/* big previous & next buttons */
-.flickity-prev-next-button {
-  width: 100px;
-  height: 100px;
+
+/* pervious/next button styling */
+button.flickity-prev-next-button {
+    top: 25%;
+
+    &.next {
+        right: 30%;
+    }
+
+    &.previous {
+        left: 30%;
+    }
 }
-// /* icon color */
-// .flickity-button-icon {
-//   fill: white;
-// // }
-// /* hide disabled button */
-// .flickity-button:disabled {
-//   display: none;
-// }
 
 
-// .carousel-cell:before {
-//     content: ("hello");
-// }
-
-// media looks like shit at 720px
+// media queries
 @media (max-width: 900px) {
     .reviews__carousel .fa-angle-left {
         left: 27%;
@@ -97,14 +91,30 @@ svg.flickity-button-icon {
     }
 }
 
+@media (max-width: 730px) {
+    button.flickity-prev-next-button {
+        top: 22%;
+
+        &.next {
+            right: 20%;
+        }
+
+        &.previous {
+            left: 20%;
+        }
+    }
+}
+
 @media (max-width: 500px) {
-    .reviews__carousel .fa-angle-left {
-        left: 17%;
-        top: 15%;
+    button.flickity-prev-next-button {
+        top: 20%;
+
+    &.next {
+        right: 7%;
     }
 
-    .reviews__carousel .fa-angle-right {
-        right: 17%;
-        top: 15%;
+    &.previous {
+        left: 7%;
     }
+}
 }

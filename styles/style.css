@@ -620,7 +620,7 @@ a.shiny:hover {
 .flickity-page-dots {
   display: none; }
 
-/* no circle */
+/* flickity button styling */
 button.flickity-button {
   background: transparent; }
 
@@ -633,10 +633,13 @@ button.flickity-button:hover {
 svg.flickity-button-icon {
   fill: #848484; }
 
-/* big previous & next buttons */
-.flickity-prev-next-button {
-  width: 100px;
-  height: 100px; }
+/* pervious/next button styling */
+button.flickity-prev-next-button {
+  top: 25%; }
+  button.flickity-prev-next-button.next {
+    right: 30%; }
+  button.flickity-prev-next-button.previous {
+    left: 30%; }
 
 @media (max-width: 900px) {
   .reviews__carousel .fa-angle-left {
@@ -646,13 +649,21 @@ svg.flickity-button-icon {
     right: 27%;
     top: 15%; } }
 
+@media (max-width: 730px) {
+  button.flickity-prev-next-button {
+    top: 22%; }
+    button.flickity-prev-next-button.next {
+      right: 20%; }
+    button.flickity-prev-next-button.previous {
+      left: 20%; } }
+
 @media (max-width: 500px) {
-  .reviews__carousel .fa-angle-left {
-    left: 17%;
-    top: 15%; }
-  .reviews__carousel .fa-angle-right {
-    right: 17%;
-    top: 15%; } }
+  button.flickity-prev-next-button {
+    top: 20%; }
+    button.flickity-prev-next-button.next {
+      right: 7%; }
+    button.flickity-prev-next-button.previous {
+      left: 7%; } }
 
 .events {
   padding-top: 7rem; }
@@ -752,7 +763,7 @@ svg.flickity-button-icon {
     width: 85%; }
   .overlay__hr {
     width: 80%;
-    margin: 0.7rem auto; } }
+    margin: 0.3rem auto; } }
 
 .question-form {
   text-align: center; }

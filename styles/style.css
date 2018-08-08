@@ -580,18 +580,7 @@ a.shiny:hover {
     margin-top: 3rem; } }
 
 .reviews__carousel {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative; }
+  text-align: center; }
   .reviews__carousel .fa-angle-left,
   .reviews__carousel .fa-angle-right {
     position: absolute;
@@ -606,12 +595,48 @@ a.shiny:hover {
   .reviews__carousel__image {
     width: 126px;
     height: 126px;
+    margin: 0 auto;
     margin-bottom: 4rem;
     position: relative; }
   .reviews__carousel__text {
     width: 80%; }
   .reviews__carousel .commenter-name {
     font-style: italic; }
+
+.carousel-cell {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+
+.flickity-page-dots {
+  display: none; }
+
+/* no circle */
+button.flickity-button {
+  background: transparent; }
+
+button.flickity-button:hover svg.flickity-button-icon {
+  fill: white; }
+
+button.flickity-button:hover {
+  background: transparent; }
+
+svg.flickity-button-icon {
+  fill: #848484; }
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px; }
 
 @media (max-width: 900px) {
   .reviews__carousel .fa-angle-left {

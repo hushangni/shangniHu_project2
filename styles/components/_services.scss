@@ -18,12 +18,11 @@
 }
 
 
-// content breaks at width: 1180;
+// media queries
 @media (max-width: 1100px) {
     .services .item__title {
         margin: 0;
     }
-
 }
 
 @media (max-width: 768px) {

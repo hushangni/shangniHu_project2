@@ -6,10 +6,15 @@ $(document).ready(function () {
         $('.t-nav').toggleClass('res-menu');
     });
 
-    // Happy subscribe submit message
-    $('.submit').on('click touchstart', function () {
-        alert(`Thank you for subscribing to our newsletter!
+    // happy cute form submit messages
+    $('#messageSend').on('click touchstart', function () {
+        alert(`Thank you for your message!
 		\n (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ ✧ﾟ･: *ヽ(◕ヮ◕ヽ)
-		\n Fun things await your inbox!`);
+        \n We will reply soon!!`);
+    });
+
+    $('#emailSend').on('click touchstart', function () {
+        alert(`Thank you for subscribing to our newsletter!
+		\n ✧･ﾟ: *✧･ﾟ:* 　Great things await your inbox　 *:･ﾟ✧*:･ﾟ✧`);
     });
 });

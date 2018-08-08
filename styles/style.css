@@ -696,11 +696,20 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       margin: 15px;
       -webkit-box-flex: 0;
       -ms-flex: 0 1 calc(100% - 80px);
-      flex: 0 1 calc(100% - 80px); } }
+      flex: 0 1 calc(100% - 80px); }
+  .overlay__hr {
+    width: 80%;
+    margin: 1.7rem auto; }
+  .overlay__p {
+    font-size: 14px;
+    font-size: 1.4rem; } }
 
 @media (max-width: 450px) {
   .events__grid {
-    width: 85%; } }
+    width: 85%; }
+  .overlay__hr {
+    width: 80%;
+    margin: 0.7rem auto; } }
 
 .question-form {
   text-align: center; }
@@ -918,7 +927,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .fa-paper-plane {
   position: absolute;
-  top: 30%;
+  top: 25%;
   right: 8%;
   font-size: 1.3rem; }
   .fa-paper-plane:hover {
@@ -1026,6 +1035,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     align-items: center; }
     .footer__nav__items li {
       margin: 1rem 10px; }
+  .fa-paper-plane {
+    top: 23%; }
   .footer__side-social {
     position: absolute;
     right: 3%;

@@ -81,7 +81,7 @@
 
 .fa-paper-plane {
     position: absolute;
-    top: 30%;
+    top: 25%;
     right: 8%;
     font-size: 1.3rem;
 
@@ -196,6 +196,10 @@
         & li {
          margin: 1rem 10px;
         }
+    }
+
+    .fa-paper-plane {
+        top: 23%;
     }
 
 

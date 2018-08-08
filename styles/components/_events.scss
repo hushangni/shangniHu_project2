@@ -87,10 +87,25 @@
             flex: 0 1 calc(100% - 80px);
         }
     }
+
+    .overlay__hr {
+        width: 80%;
+        margin: 1.7rem auto;
+    }
+
+    .overlay__p {
+        @include fontSize(14);
+    }
 }
 
 @media (max-width: 450px) {
     .events__grid {
         width: 85%;
     }
+
+    .overlay__hr {
+        width: 80%;
+        margin: 0.7rem auto;
+    }
+
 }

@@ -60,6 +60,18 @@
     transform: scale(1);
     opacity: 1; } }
 
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%; }
+  to {
+    -webkit-mask-position: -50%; } }
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%; }
+  to {
+    -webkit-mask-position: -50%; } }
+
 body {
   font-size: 16px;
   font-size: 1.6rem;
@@ -320,6 +332,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start; }
+
+a.shiny:hover {
+  -webkit-mask-image: -webkit-linear-gradient(165deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+  -webkit-mask-size: 200%;
+  -webkit-animation: shine 1.5s infinite;
+  animation: shine 1.5s infinite; }
 
 .t-nav {
   -webkit-box-flex: 1;

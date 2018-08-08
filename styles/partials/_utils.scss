@@ -47,3 +47,13 @@ $yellow: rgb(229, 191, 75);
         opacity   : 1;
     }
 }
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
